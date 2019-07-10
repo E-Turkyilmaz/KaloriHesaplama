@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kalori Hesaplama Uygulamasi</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="yas">Yaş</string>
+    <string name="kadın">Kadın</string>
+    <string name="erkek">Erkek</string>
+    <string name="kilo_kg">Kilo(kg)</string>
+    <string name="boy_cm">Boy(cm)</string>
+    <string name="isim">İsim</string>
+</resources>

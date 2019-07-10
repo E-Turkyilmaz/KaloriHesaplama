@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.courses.egemen.kalorihesapla.YemekSec">
+
+
+    <ImageButton
+        android:id="@+id/salataButton"
+        android:layout_width="93dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/salatalar" />
+
+    <ImageButton
+        android:id="@+id/corbaButton"
+        android:layout_width="93dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/salataButton"
+        android:layout_toRightOf="@+id/salataButton"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/corbalar" />
+
+    <ImageButton
+        android:id="@+id/anayemekButton"
+        android:layout_width="93dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/corbaButton"
+        android:layout_toRightOf="@+id/corbaButton"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/anayemekler" />
+
+    <ImageButton
+        android:id="@+id/icecekButton"
+        android:layout_width="93dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/anayemekButton"
+        android:layout_toRightOf="@+id/anayemekButton"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icecekler" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salataButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <EditText
+        android:id="@+id/porsiyonEditText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/ekleButton"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/porsiyonEditText"
+        android:text="Porsiyon: "/>
+
+    <TextView
+        android:id="@+id/listeleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ekleButton"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/ekleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/porsiyonEditText"
+        android:layout_alignEnd="@+id/spinner"
+        android:layout_alignRight="@+id/spinner"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/kaydetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listeleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="KAYDET" />
+</RelativeLayout>
